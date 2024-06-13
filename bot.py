@@ -7,7 +7,6 @@ import traceback
 from binascii import (
     Error
 )
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto
 from pyrogram.errors import (
     UserNotParticipant,
     FloodWait,
