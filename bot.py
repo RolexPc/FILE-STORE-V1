@@ -79,6 +79,8 @@ async def start(bot: Client, cmd: Message):
                         InlineKeyboardButton('🖥 𝗡𝗘𝗪 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🖥', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS')
                      ],[     
                         InlineKeyboardButton('⭕️ 𝗚𝗘𝗧 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞𝗦 ⭕️', url="https://t.me/ARAKAL_THERAVAD_GROUP_LINKS")
+                    ],[
+                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
                     ]
                 ]
             )
@@ -322,6 +324,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton('🖥 𝗡𝗘𝗪 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🖥', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS')
                      ],[     
                         InlineKeyboardButton('⭕️ 𝗚𝗘𝗧 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞𝗦 ⭕️', url="https://t.me/ARAKAL_THERAVAD_GROUP_LINKS")
+                    ],[
+                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
                     ]
                 ]
             )
@@ -342,6 +346,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton('🖥 𝗡𝗘𝗪 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🖥', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS')
                      ],[     
                         InlineKeyboardButton('⭕️ 𝗚𝗘𝗧 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞𝗦 ⭕️', url="https://t.me/ARAKAL_THERAVAD_GROUP_LINKS")
+                    ],[
+                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
                     ]
                 ]
             )
@@ -363,6 +369,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton('🖥 𝗡𝗘𝗪 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🖥', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS')
                      ],[     
                         InlineKeyboardButton('⭕️ 𝗚𝗘𝗧 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞𝗦 ⭕️', url="https://t.me/ARAKAL_THERAVAD_GROUP_LINKS")
+                    ],[
+                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
                     ]
                 ]
             )
@@ -420,6 +428,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton('🖥 𝗡𝗘𝗪 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🖥', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS')
                      ],[     
                         InlineKeyboardButton('⭕️ 𝗚𝗘𝗧 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞𝗦 ⭕️', url="https://t.me/ARAKAL_THERAVAD_GROUP_LINKS")
+                    ],[
+                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
                     ]
                 ]
             )
