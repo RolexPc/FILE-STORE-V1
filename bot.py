@@ -317,9 +317,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('🪬 𝑯𝒐𝒎𝒆 🪬', callback_data='start')
-                    ], [
-                        InlineKeyboardButton('⬅️ 𝑩𝒂𝒄𝒌', callback_data='help'),
+                        InlineKeyboardButton('🪬 𝑯𝒐𝒎𝒆 🪬', callback_data='/start')
+                    ], [                        
                         InlineKeyboardButton('𝑪𝒍𝒐𝒔𝒆✖️', callback_data='close_data'),
                     ]
                 ]
