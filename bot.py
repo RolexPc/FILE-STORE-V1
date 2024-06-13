@@ -73,7 +73,7 @@ async def start(bot: Client, cmd: Message):
         await Message.reply_photo(
             photo=random.choice(PICS),
             caption=Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),  
-            parse_mode=enums.ParseMode.HTML
+            parse_mode=enums.ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
