@@ -72,7 +72,8 @@ async def start(bot: Client, cmd: Message):
         await add_user_to_database(bot, cmd)
         await Message.reply_photo(
             photo=random.choice(PICS),
-            caption=Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),                                  
+            caption=Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),  
+            parse_mode=enums.ParseMode.HTML
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -103,8 +104,7 @@ async def start(bot: Client, cmd: Message):
                 message_ids = GetMessage.text.split(" ")
                 _response_msg = await cmd.reply_text(
                     text=f"**Total Files:** `{len(message_ids)}`",
-                    quote=True,
-                    disable_web_page_preview=True
+                    quote=True,                   
                 )
             else:
                 message_ids.append(int(GetMessage.id))
