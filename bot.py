@@ -8,7 +8,6 @@ from binascii import (
     Error
 )
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto
-from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmptyfrom pyrogram import Client, __version__, filters
 from pyrogram.errors import (
     UserNotParticipant,
     FloodWait,
