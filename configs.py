@@ -19,10 +19,7 @@ class Config(object):
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", False))
 	ABOUT_BOT_TEXT = f"""
-This is Permanent Files Store Bot!
-Send me any file I will save it in my Database. Also works for channel. Add me to channel as Admin with Edit Permission, I will add Save Uploaded File in Channel & add Sharable Button Link.
-
-🤖 *,*𝑴𝒚 𝑵𝒂𝒎𝒆 :** [Files Store Bot](https://t.me/{BOT_USERNAME})
+🤖 **𝑴𝒚 𝑵𝒂𝒎𝒆 :** [Files Store Bot](https://t.me/{BOT_USERNAME})
 
 📝 **𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆:** [𝑷𝒚𝒕𝒉𝒐𝒏](https://www.python.org)
 
