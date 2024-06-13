@@ -72,8 +72,7 @@ async def start(bot: Client, cmd: Message):
         await add_user_to_database(bot, cmd)
         await Message.reply_photo(
             photo=random.choice(PICS),
-            caption=Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),                       
-            disable_web_page_preview=True,
+            caption=Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),                                  
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
