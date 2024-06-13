@@ -23,7 +23,7 @@ from pyrogram.types import (
     CallbackQuery,
     Message
 )
-from configs import Config
+from configs import Config PICS
 from handlers.database import db
 from handlers.add_user_to_db import add_user_to_database
 from handlers.send_file import send_media_and_reply
