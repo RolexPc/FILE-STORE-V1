@@ -24,7 +24,7 @@ from pyrogram.types import (
     Message
 )
 from configs import Config
-from Config import PICS
+from configs import PICS
 from handlers.database import db
 from handlers.add_user_to_db import add_user_to_database
 from handlers.send_file import send_media_and_reply
