@@ -22,17 +22,17 @@ class Config(object):
 	ABOUT_BOT_TEXT = f"""
 🤖 **𝑴𝒚 𝑵𝒂𝒎𝒆 :** [Files Store Bot](https://t.me/{BOT_USERNAME})
 
-📝 **𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆:** [𝑷𝒚𝒕𝒉𝒐𝒏](https://www.python.org)
+📝 **𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆 :** [𝑷𝒚𝒕𝒉𝒐𝒏](https://www.python.org)
 
-📚 **𝑭𝒓𝒂𝒎𝒆𝒘𝒐𝒓𝒌** [𝑷𝒚𝒓𝒐𝒈𝒓𝒂𝒎](https://docs.pyrogram.org)
+📚 **𝑭𝒓𝒂𝒎𝒆𝒘𝒐𝒓𝒌 :** [𝑷𝒚𝒓𝒐𝒈𝒓𝒂𝒎](https://docs.pyrogram.org)
 
-📡 **𝑯𝒐𝒔𝒕𝒆𝒅 𝑶𝒏:** 𝑯𝑬𝑹𝑲𝑼𝑶
+📡 **𝑯𝒐𝒔𝒕𝒆𝒅 𝑶𝒏 :** 𝑯𝑬𝑹𝑲𝑼𝑶
 
-🧑🏻‍💻 **𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓:** [𝑵𝒂𝒛𝒓𝒊𝒚𝒂](https://t.me/ARAKAL_THERAVAD_MOVIES_02_bot)
+🧑🏻‍💻 **𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 :** [𝑵𝒂𝒛𝒓𝒊𝒚𝒂](https://t.me/ARAKAL_THERAVAD_MOVIES_02_bot)
 
-👥 **𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑:** [𝑨𝑻𝑴](https://t.me/DevsZone)
+👥 **𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑 :** [𝑨𝑻𝑴](https://t.me/DevsZone)
 
-📢 **𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍:** [𝑨𝑻𝑴 𝑶𝒇𝒇𝒊𝒄𝒊𝒂𝒍](https://t.me/Discovery_Updates)
+📢 **𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 :** [𝑨𝑻𝑴 𝑶𝒇𝒇𝒊𝒄𝒊𝒂𝒍](https://t.me/Discovery_Updates)
 """
 	
 	HOME_TEXT = """**
