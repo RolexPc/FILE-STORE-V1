@@ -68,20 +68,3 @@ async def cb_handler(client, query: CallbackQuery):
             await query.message.continue_propagation()
 
 
-
-
-
-@Client.on_message(filters.private & filters.command(["donate", "d"]))
-async def donate(client, message):
-	text = Txt.DONATE_TXT
-	keybord = InlineKeyboardMarkup([
-        			[InlineKeyboardButton("🦋 Admin",url = "https://t.me/ARAKAL_THERAVAD_MOVIES_02_bot"), 
-        			InlineKeyboardButton("✖️ Close",callback_data = "close") ]])
-	await message.reply_text(text = text,reply_markup = keybord)
-
-
-
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @JishuBotz
-# Developer @JishuDeveloper
