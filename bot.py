@@ -4,8 +4,8 @@ import os
 import asyncio
 import random
 import traceback
+from pyrogram import Client, __version__
 from pyrogram import (
-    Client,
     enums,
     filters
 )
