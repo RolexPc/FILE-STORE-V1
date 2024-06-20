@@ -7,19 +7,19 @@ class Config(object):
 	API_ID = int(os.environ.get("API_ID", "12618934"))
 	API_HASH = os.environ.get("API_HASH", "49aacd0bc2f8924add29fb02e20c8a16")
 	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME", "ARAKAL_THERAVAD_MOVIES_V7_bot")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "@ARAKAL_THERAVAD_MOVIES_V7_bot")
 	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001974433785"))
 	BOT_OWNER = int(os.environ.get("BOT_OWNER", "1297128957"))
 	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Autofilterv7:Autofilterv7@cluster0.t5tqe4s.mongodb.net/")
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
+	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002022755818")
 	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1002010307613")
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
-	START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/b3f085dad94c503043375.jpg")
+	PICS = (environ.get('PICS', 'https://telegra.ph/file/ee0cdd28fdd53d3df26c7.jpg https://telegra.ph/file/def62cc4e67aabc03d4c8.jpg https://telegra.ph/file/0c04c8e0b4a67d1716f53.jpg https://telegra.ph/file/eccd0bd3f18111afb9726.jpg https://telegra.ph/file/d6a99238948a8918e3e94.jpg https://telegra.ph/file/fcaf8e6dbadb19364ab54.jpg https://telegra.ph/file/6ca5d5dc24e029c4fe642.jpg https://telegra.ph/file/80a417b7cfc6dc262dcee.jpg https://telegra.ph/file/0426befe276a430a6cdf0.jpg https://telegra.ph/file/7d716533a70fad271a5b9.jpg')).split()
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", False))
-	ABOUT_TXT = f"""
+	ABOUT_BOT_TEXT = f"""
 🤖 **𝑴𝒚 𝑵𝒂𝒎𝒆 :** [Files Store Bot](https://t.me/{BOT_USERNAME})
 
 📝 **𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆 :** [𝑷𝒚𝒕𝒉𝒐𝒏](https://www.python.org)
@@ -35,7 +35,7 @@ class Config(object):
 📢 **𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 :** [𝑨𝑻𝑴 𝑶𝒇𝒇𝒊𝒄𝒊𝒂𝒍](https://t.me/Discovery_Updates)
 """
 	
-	START_TXT = """**
+	HOME_TEXT = """**
 Hi, [{}](tg://user?id={})\n\nThis is Permanent **File Store Bot**.
 
 Bro Or Sis, ഈ ഒരു ബോട്ട് @ARAKAL_THERAVAD_GROUP_LINKS ൻ്റെ Files Store Bᴏᴛ ᴠ7 ആണ്, ബോട്ട് Owner ഡെ പർമ്മിഷൻ ഇല്ലാതെ മറ്റു ഒന്നിനും ഈ ബോട്ടിനെ യൂസ് ചെയ്യാൻ കഴിയില്ല..!!  🤗⚠
