@@ -68,7 +68,7 @@ async def start(bot: Client, cmd: Message):
         # Send image before welcome text
         await bot.send_photo(
             chat_id=cmd.from_user.id,
-            photo=f"https://example.com/yourimage.jpg"  # Replace with your image URL
+            photo=f"https://telegra.ph/file/bb8d3fef33012c904cd8c.jpg"  # Replace with your image URL
         )
 
         await cmd.reply_text(
