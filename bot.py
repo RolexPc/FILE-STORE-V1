@@ -50,6 +50,11 @@ Bot = Client(
 )
 
 
+@Bot.on_message(filters.private)
+async def _(bot: Client, cmd: Message):
+    await handle_user_status(bot, cmd)
+
+
 @Bot.on_message(filters.command("start") & filters.private)
 async def start(bot: Client, cmd: Message):
 
@@ -64,13 +69,6 @@ async def start(bot: Client, cmd: Message):
     usr_cmd = cmd.text.split("_", 1)[-1]
     if usr_cmd == "/start":
         await add_user_to_database(bot, cmd)
-
-        # Send image before welcome text
-        await bot.send_photo(
-            chat_id=cmd.from_user.id,
-             photo=f"https://telegra.ph/file/7d716533a70fad271a5b9.jpg" 
-        )
-
         await cmd.reply_text(
             Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
             disable_web_page_preview=True,
@@ -83,7 +81,7 @@ async def start(bot: Client, cmd: Message):
                         InlineKeyboardButton('𝐆 - 4⃣', url=f'https://t.me/ARAKAL_THERAVAD_GROUP_04')                                                             
                     ],
                     [
-                        InlineKeyboardButton(' 𝗡𝗘𝗪 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 ', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS')
+                        InlineKeyboardButton('🖥 𝗡𝗘𝗪 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🖥', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS')
                      ],[     
                         InlineKeyboardButton('⭕️ 𝗚𝗘𝗧 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞𝗦 ⭕️', url="https://t.me/ARAKAL_THERAVAD_GROUP_LINKS")
                     ],[
