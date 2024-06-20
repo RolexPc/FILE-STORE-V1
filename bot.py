@@ -66,7 +66,52 @@ async def start(bot: Client, cmd: Message):
         if back == 400:
             return
     
-    
+    usr_cmd = cmd.text.split("_", 1)[-1]
+    if usr_cmd == "/start":
+        await add_user_to_database(bot, cmd)
+        await cmd.reply_text(
+            Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton('𝐆 - 1⃣', url=f'https://t.me/+un_DT-l-Td5iODc1'),
+                        InlineKeyboardButton('𝐆 - 2⃣', url=f'https://t.me/ARAKAL_THERAVAD_GROUP_03'),
+                        InlineKeyboardButton('𝐆 - 3⃣', url=f'https://t.me/cinemalokamramanan'),
+                        InlineKeyboardButton('𝐆 - 4⃣', url=f'https://t.me/ARAKAL_THERAVAD_GROUP_04')                                                             
+                    ],
+                    [
+                        InlineKeyboardButton('🖥 𝗡𝗘𝗪 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🖥', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS')
+                     ],[     
+                        InlineKeyboardButton('⭕️ 𝗚𝗘𝗧 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞𝗦 ⭕️', url="https://t.me/ARAKAL_THERAVAD_GROUP_LINKS")
+                    ],[
+                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
+                    ]
+                ]
+            )
+        )
+    else:
+        try:
+            try:
+                file_id = int(b64_to_str(usr_cmd).split("_")[-1])
+            except (Error, UnicodeDecodeError):
+                file_id = int(usr_cmd.split("_")[-1])
+            GetMessage = await bot.get_messages(chat_id=Config.DB_CHANNEL, message_ids=file_id)
+            message_ids = []
+            if GetMessage.text:
+                message_ids = GetMessage.text.split(" ")
+                _response_msg = await cmd.reply_text(
+                    text=f"**Total Files:** `{len(message_ids)}`",
+                    quote=True,                   
+                )
+            else:
+                message_ids.append(int(GetMessage.id))
+            for i in range(len(message_ids)):
+                await send_media_and_reply(bot, user_id=cmd.from_user.id, file_id=int(message_ids[i]))
+        except Exception as err:
+            await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
+
+
 @Bot.on_message(filters.private)
 async def main(bot: Client, message: Message):
 
