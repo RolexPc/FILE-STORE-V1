@@ -50,7 +50,7 @@ Bot = Client(
 )
 
 
-@Bot.on_message(filters.command("start") & filters
+@Bot.on_message(filters.command("start") & filters.private)
 async def start(bot: Client, cmd: Message):
 
     if cmd.from_user.id in Config.BANNED_USERS:
@@ -112,7 +112,7 @@ async def start(bot: Client, cmd: Message):
                 await send_media_and_reply(bot, user_id=cmd.from_user.id, file_id=int(message_ids[i]))
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
-
+            
 
 @Bot.on_message(filters.private)
 async def main(bot: Client, message: Message):
